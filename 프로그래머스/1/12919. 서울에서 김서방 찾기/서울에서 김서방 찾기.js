@@ -1,6 +1,5 @@
 function solution(seoul) {
     var answer = '';
-    let index;
 
     for(let i = 0; i<seoul.length; i++){
         if(seoul[i]==='Kim'){
