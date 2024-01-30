@@ -1,6 +1,7 @@
 function solution(a, b) {
     var answer = 0;
     let arr = [];
+    //절대값 함수
     let arrLength = Math.abs(a - b) + 1;
 
     if(a === b){
