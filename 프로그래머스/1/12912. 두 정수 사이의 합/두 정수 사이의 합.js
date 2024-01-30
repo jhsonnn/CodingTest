@@ -15,7 +15,7 @@ function solution(a, b) {
     }
 
     for(let i = 0; i < arrLength; i++){
-        arr[i] = arr[0]+i;
+        arr[i] = arr[0]+i; // arr[0]=3 => arr[1] = 3+1 //arr[2]=3+2
         answer += arr[i];
     }
 
