@@ -2,10 +2,6 @@ function solution(arr) {
     var answer = [];
     let min = 0;
 
-    // //내림차순
-    // arr = arr.sort((a,b)=>{
-    //     return b-a;
-    // })
     //가장 작은 값 구하기
     min = Math.min(...arr);
   
