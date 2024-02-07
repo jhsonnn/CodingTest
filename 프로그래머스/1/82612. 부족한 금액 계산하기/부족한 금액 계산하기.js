@@ -1,13 +1,24 @@
 function solution(price, money, count) {
- let answer = 0;
+    var answer = 0;
     let sum = 0;
+    //answer = (money - 구해야하는 것)
+    //구해야하는 것(놀이기구 이용금액)
+    //price / money / count / result
+    //3     / 20    / 4     / 10
+    //놀이기구 이용금액
+    //= 3 + (3*2) + (3*3) + (3*4)
+    //=>다음 항에서 3 증가(등비수열)
+    //즉, 놀이기구 이용금액은 등차수열의 합 이용
+    //sn = n(2a+(n-1)d)/2
 
-    // 등비수열의 합 공식 사용
-    sum = (price * count * (count + 1)) / 2;
-    answer = sum - money;
-
-    // 만약 answer가 음수라면 부족한 금액이므로 0으로 변경
-    answer = Math.max(0, answer);
+    //놀이기구 이용금액
+    sum = (count * (2*price + (count-1)*price))/2;
+    //금액이 부족할 경우
+    if(sum > money){
+        answer = sum - money;
+    }else{
+        answer = 0;
+    }
 
     return answer;
 }
