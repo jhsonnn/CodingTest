@@ -1,7 +1,7 @@
 function solution(price, money, count) {
     var answer = 0;
     let sum = 0;
-    //answer = (money - 구해야하는 것)
+    //answer = (구해야하는 것 - money)
     //구해야하는 것(놀이기구 이용금액)
     //price / money / count / result
     //3     / 20    / 4     / 10
@@ -19,6 +19,7 @@ function solution(price, money, count) {
     }else{
         answer = 0;
     }
+
 
     return answer;
 }
