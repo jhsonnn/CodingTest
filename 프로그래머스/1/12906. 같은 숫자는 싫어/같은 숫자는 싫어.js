@@ -8,13 +8,11 @@ function solution(arr)
             answer.push(arr[i])
         }
         for(let j = i+1; j<arr.length; j++){
-            
             if(arr[i] === arr[j]){
                 bCheck = true;
                 break;
             }
         }     
     }
-
     return answer;
 }
