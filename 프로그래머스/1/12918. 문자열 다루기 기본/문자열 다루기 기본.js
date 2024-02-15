@@ -8,7 +8,6 @@ function solution(s) {
             // 못바꾸면 true, 변환가능하면 false
             if(isNaN(num)){
                 answer = false;
-                //break;
             }
         }
     }else{
